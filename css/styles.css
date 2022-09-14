@@ -1,0 +1,86 @@
+*, *:after, *:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    font-family: Arial, sans-serif;
+    font-size: 1.6rem;
+}
+.container{
+    width: 100%;
+    max-width: 120rem;
+    max-height: 100%;
+    height: 100vh;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-header{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+.profile-header__thumbnail-img{
+    width:  5rem;
+    height: 5rem;
+    border-radius: 0.4rem;
+}
+.profile-header__profile-name{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.profile-header__profile-name h3, .profile-header__profile-name h4{
+    display: flex;
+}
+.profile-header__follow-btn{
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 auto;
+}
+.profile-header__follow-btn > button{
+    border: none;
+    padding: 0.5rem;
+}
+
+.inner-content p{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.inner-content hr{
+    margin: 2rem 0;
+    border-style: solid;
+    opacity: 0.1;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+}
+footer .stats{
+    font-size: 1.5rem;
+    display: flex;
+}
+footer .stats strong{
+    font-size: 1.8rem;
+}
+.stats__likes{
+    margin-left: 0.8rem;
+}
+footer .cta{
+    margin-left: auto;
+}
+.cta .cta__share-btn, .cta__retweet-btn, .cta__like-btn{
+    border: none;
+    background-color: transparent;
+    padding: 0.1rem 0.6rem;
+    margin-right: 0.3rem;
+}
